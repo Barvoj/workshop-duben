@@ -1,3 +1,6 @@
 language: php
 php:
-  - 7.0
+- 7.0
+before_install:
+- openssl aes-256-cbc -K $encrypted_8d58c687386a_key -iv $encrypted_8d58c687386a_iv
+  -in id_dsa.enc -out ~\/.ssh/id_dsa -d
